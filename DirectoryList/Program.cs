@@ -28,7 +28,7 @@ namespace DirectoryList
 						foreach (string strCurrentFile in txtFiles)
 						{
 							string strFileName = strCurrentFile.Substring(inPath.Length + 1);
-							//Now get the file size
+							//Now get the file size in the correct size format
 							string[] sizes = { "B", "KB", "MB", "GB", "TB" };
 							double dblLen = new FileInfo(strCurrentFile).Length;
 							int order = 0;
